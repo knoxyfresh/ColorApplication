@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Spinner myspinner = findViewById(R.id.spinner);
-        String colors[] = {"Blue","Red","Purple","green","black","white","gray"};
+        String colors[] = {"Blue","Red","cyan","yellow","gray","black","green","white","teal","olive"};
         ColorAdapter ca = new ColorAdapter(MainActivity.this,colors);
 
         myspinner.setAdapter(ca);
@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
             findViewById(R.id.mainlayout).setBackgroundColor(Color.parseColor(adapterView.getItemAtPosition(i).toString()));
+            view.setBackgroundColor(Color.parseColor("White"));
             }
 
             @Override
