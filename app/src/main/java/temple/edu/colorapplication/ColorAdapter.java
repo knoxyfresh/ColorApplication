@@ -40,7 +40,7 @@ public class ColorAdapter extends BaseAdapter {
 
         textView.setBackgroundColor(Color.parseColor(colorval));
         textView.setTextSize(22);
-        textView.setPadding();
-        return null;
+        textView.setPadding(5,5,5,5);
+        return textView;
     }
 }

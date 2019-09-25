@@ -18,5 +18,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        ListView mylist = findViewById(R.id.myList);
+        string[] colors = {"Blue","Red",Purple};
+        ColorAdapter ca = new ColorAdapter(this.context,colors);
+
+        mylist.setAdapter(ca);
     }
 }
