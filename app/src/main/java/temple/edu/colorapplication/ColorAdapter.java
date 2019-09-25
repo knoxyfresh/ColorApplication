@@ -1,6 +1,7 @@
 package temple.edu.colorapplication;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
@@ -34,7 +35,12 @@ public class ColorAdapter extends BaseAdapter {
 
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
-        TextView textView
+        TextView textView = new TextView(context);
+        String colorval = colors[i];
+
+        textView.setBackgroundColor(Color.parseColor(colorval));
+        textView.setTextSize(22);
+        textView.setPadding();
         return null;
     }
 }
