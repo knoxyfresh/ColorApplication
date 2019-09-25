@@ -37,7 +37,7 @@ public class ColorAdapter extends BaseAdapter {
     public View getView(int i, View view, ViewGroup viewGroup) {
         TextView textView = new TextView(context);
         String colorval = colors[i];
-
+        textView.setText(colorval);
         textView.setBackgroundColor(Color.parseColor(colorval));
         textView.setTextSize(22);
         textView.setPadding(5,5,5,5);
